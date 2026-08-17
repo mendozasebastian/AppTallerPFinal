@@ -1,0 +1,134 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f8fa;
+    color: #222222;
+}
+
+.hero {
+    background: linear-gradient(135deg, #04AA6D 0%, #037a4f 100%);
+    color: #ffffff;
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.18);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 0 0 16px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0 0 32px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #04AA6D;
+}
+
+.btn-primary:hover {
+    background-color: #eafff5;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.features {
+    max-width: 1000px;
+    margin: -40px auto 60px;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 28px 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+}
+
+.feature-card p {
+    margin: 0 0 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555555;
+}
+
+.feature-card a {
+    color: #04AA6D;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.feature-card a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 24px;
+    color: #888888;
+    font-size: 13px;
+}

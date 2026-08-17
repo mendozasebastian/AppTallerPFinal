@@ -1,0 +1,244 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #2b2f38;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 24px 0 16px 0;
+    color: #1f2937;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1f2937;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+    ul li a {
+        display: block;
+        color: #e5e7eb;
+        padding: 16px 18px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+        ul li a:hover:not(.active) {
+            background-color: #374151;
+            color: #ffffff;
+        }
+
+        ul li a.active {
+            background-color: #04AA6D;
+            color: #ffffff;
+        }
+
+.page-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px 48px 24px;
+}
+
+.grid-wrapper {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+    margin-bottom: 28px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #04AA6D;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px 12px;
+}
+
+table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:hover td {
+    background-color: #f0fdf7;
+}
+
+.form-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+}
+
+.form-card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #1f2937;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 12px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 6px;
+}
+
+.form-field input[type="text"],
+.form-field input[type="date"] {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9fafb;
+    font-family: inherit;
+    width: 100%;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+    .form-field input[type="text"]:focus,
+    .form-field input[type="date"]:focus {
+        outline: none;
+        border-color: #04AA6D;
+        background-color: #ffffff;
+    }
+
+.reference-section {
+    margin-bottom: 24px;
+}
+
+.reference-grids {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+}
+
+.reference-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #04AA6D;
+}
+
+.reference-card h3 {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: #1f2937;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.reference-card table {
+    font-size: 13px;
+}
+
+.reference-card table th {
+    background-color: #eef2f5;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.reference-card {
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.alert-error {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+    font-size: 14px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #047857;
+    font-size: 14px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+input[type="submit"], button, .button-row input {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+    input[type="submit"]:active {
+        transform: scale(0.98);
+    }
+
+#btnGuardar {
+    background-color: #04AA6D;
+    color: #ffffff;
+}
+
+#btnActualizar {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+#btnEliminar {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+#btnConsultar {
+    background-color: #6b7280;
+    color: #ffffff;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.9;
+}
